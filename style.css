@@ -1,0 +1,174 @@
+body{
+    background: #F7F7FF 0% 0% no-repeat padding-box;
+    background-image: url(Group\ 34.svg), url(Group\ 35.svg) ;
+    background-position: top right, bottom left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500px 500px;
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-div{
+    display: block;
+}
+
+.card-container{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 25px #00000029;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px;
+
+}
+
+.card:hover{
+    background: transparent linear-gradient(145deg, #B2B6F4 0%, #797BD9 100%) 0% 0% no-repeat padding-box;
+    transform: scale(1.1);
+}
+
+.Master{
+    font-size: 32px;
+}
+.money{
+    font: normal normal bold 67px/75px Montserrat;
+}
+.doller{
+    font: normal normal 600 39px/44px Montserrat;
+}
+.storage{
+    font: normal normal 600 17px/25px Montserrat
+}
+.users{
+    font: normal normal 600 17px/25px Montserrat;
+}
+.limit{
+    font: normal normal 600 17px/25px Montserrat;
+}
+.button{
+    border: 1px solid #65687E;
+    border-radius: 4px;
+    padding: 4px 4px 4px 4px;
+}
+button{
+    font-size: large;
+    background: white;
+    border: white;
+}
+
+header{
+    font: normal normal bold 38px/42px Montserrat;
+    letter-spacing: -1.9px;
+}
+.timeline{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* The switch - the box around the slider */
+.round-switch {
+    width: 51px;
+    height: 31px;
+    position: relative;
+}
+  
+  /* Hide default HTML checkbox */
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+  
+.switch {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #e9e9eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+  
+  /* The slider */
+.slider {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: calc(50% - 27px/2 - 10px);
+    top: calc(50% - 27px/2);
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+  
+.checkbox:checked + .switch {
+    background-color: #34C759;
+}
+  
+.checkbox:checked + .switch .slider {
+    left: calc(50% - 27px/2 + 10px);
+    top: calc(50% - 27px/2);
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        background: #F7F7FF 0% 0% no-repeat padding-box;
+        background-image: url(Group\ 34.svg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 500px 200px;
+    }
+    .parent-container{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+    .main-div{
+        display: block;
+    }
+    header{
+        text-align: center;
+        font: normal normal bold 31px/34px Montserrat;
+    }
+    .timeline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1.5rem;
+        margin: auto;
+        font: normal 30px/30px montserrat;
+    }
+    .card-container{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
+    
+}
+  
